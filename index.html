@@ -18,6 +18,7 @@
                 margin: 0;
                 padding: 0;
                 background-color: black;
+                padding-top: 48px; /* adjust to navbar height */
             }
 
             .information {
@@ -53,6 +54,11 @@
             padding: 0;
             overflow: hidden;
             background-color: #000000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index:1000;
             }
 
             ul li {
@@ -73,7 +79,7 @@
 
             @font-face {
             font-family: "IsagiBlue";
-            src: url("/fonts/Fonstars-4Bo0p.otf") format("opentype");
+            src: url("../../fonts/Fonstars-4Bo0p.otf") format("opentype");
             }
 
             * {
@@ -82,7 +88,7 @@
 
             @font-face {
             font-family: "IsagiBlue";
-            src: url("/fonts/Fonstars-4Bo0p.otf") format("opentype");
+            src: url("../../fonts/Fonstars-4Bo0p.otf") format("opentype");
             }
 
             * {
@@ -91,7 +97,7 @@
 
             @font-face {
             font-family: "IsagiRed";
-            src: url("/fonts/yoruka-font/Yoruka-1j9rL.ttf") format("opentype");
+            src: url("../../fonts/yoruka-font/Yoruka-1j9rL.ttf") format("opentype");
             }
 
             .underline-anim {
@@ -131,13 +137,13 @@
             
 
             <ul>
-            <li><a href="/index.html" class="underline-anim">Home</a></li>
+            <li><a href="index.html" class="underline-anim">Home</a></li>
             <li><a href="./public/lineup.html" class="underline-anim">Lineup</a></li>
             <li><a href="./public/matchups.html" class="underline-anim">Matchups</a></li>
             <li><a href="./public/teams.html" class="underline-anim">Teams</a></li>
-            
             <li><a href="./public/aces.html" class="underline-anim">Aces</a></li>
             <li><a href="./public/references.html" class="underline-anim">Sources</a></li>
+            <li style="position: absolute; right: 0;"><a href="#" class="underline-anim">Blue Lock Neo Egoist League</a></li>
             </ul>
 
 
