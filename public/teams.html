@@ -51,24 +51,52 @@
             font-family: "IsagiRed";
             src: url("/fonts/yoruka-font/Yoruka-1j9rL.ttf") format("opentype");
             }
+
+.underline-anim {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            }
+
+
+            .underline-anim::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ffffff;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+            }
+
+            .underline-anim:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+
+            ul a:active {
+                transform: translateY(4px);
+            }
+
+            </style>
+            </head>
+            <body>
+
             
-            
 
-        table {
-font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+            <ul>
+            <li><a href="/index.html" class="underline-anim">Home</a></li>
+            <li><a href="../public/lineup.html" class="underline-anim">Lineup</a></li>
+            <li><a href="../public/matchups.html" class="underline-anim">Matchups</a></li>
+            <li><a href="../public/teams.html" class="underline-anim">Teams</a></li>
+            <li><a href="../public/aces.html" class="underline-anim">Aces</a></li>
+            <li><a href="../public/references.html" class="underline-anim">Sources</a></li>
+            <li style="position: right;"
+            </ul>
 </style>
 </head>
 <body>
