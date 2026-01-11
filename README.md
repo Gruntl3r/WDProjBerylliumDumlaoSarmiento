@@ -17,3 +17,18 @@ Js will be incorporated in the same way with each matchup of each round being a 
 Teams:
 
 This page will be similar to the lineup page in the sense that the logos of each team will be a button that the user can press in order to view a more detailed description of team and its players.
+
+
+
+3RD QUARTER PROJECT PROPOSAL
+
+
+
+Tracker:
+
+For this new section of our website, we implemented a system that allows the user to set goals and routines that add to a progress bar based on how much the user has inputted into the
+ system. The data inputted will consist of physical exercises like dribbles, laps or shots landed. 
+
+The way this section will be used is by the user first inputting their login info through an email and password or username and password. They will then be redirected to a page that contains areas where the user can put how much of whatever drill they want to do. Then the user will submit these desired repetitions and they will be saved to the user's computer through javascript's Localstorage. The user will then update how much they have done which will make the progress bar increase overtime.
+
+This webpage serves as something that will make our website more interesting as it will not only give info on the players, but become something that oversees your progress to be like one of them.
